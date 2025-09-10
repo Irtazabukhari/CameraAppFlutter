@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // 🔥 Animated flip effect on CameraPreview
+            
             SizedBox(
               height: 600,
               width: 600,
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     builder: (context, child) {
                       final isUnder =
                           (ValueKey(selectedCameraIndex) != child?.key);
-                      var tilt = (rotate.value / pi) * 0.002; // subtle tilt
+                      var tilt = (rotate.value / pi) * 0.002; 
                       tilt *= isUnder ? -1.0 : 1.0;
                       final value = isUnder
                           ? min(rotate.value, pi / 2)
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Switch Camera Button
+                
                 IconButton(
                   onPressed: _switchCamera,
                   iconSize: 60,
